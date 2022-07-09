@@ -1,6 +1,6 @@
 # 2D Pose Basic
 
-`2022.7.6` 彭程
+`2022.7.6` 
 
 ## 0. Null
 
@@ -161,8 +161,6 @@ https://zhuanlan.zhihu.com/p/92417329
 
 **Joint Training of a Convolutional Network and a Graphical Model for Human Pose Estimation**
 
-
-
 ![image-20220707132521760](2D Pose Basic.assets/image-20220707132521760-16571715238072.png)
 
 * multi-resolution input with overlapping receptive fields  
@@ -188,8 +186,6 @@ https://zhuanlan.zhihu.com/p/92417329
 
 假设身体部位B位于中心 像素处，则卷积先验  $P_{A \mid B}(i, j) $ 是身体部位A出现在像素位置  $(i, j) $ 的可能性。对于身体部位  A  ，作者将最终边际可能性  $\tilde{p}_{A}  $计算为:
 $$
-
-
 \tilde{p}_{A}=\frac{1}{Z} \Pi_{v \in V}\left(p_{A} \mid v * p_{v}+b_{v \rightarrow A}\right)
 $$
 
@@ -218,15 +214,19 @@ $$
 
 
 
-Stacked Hourglass Network
+**Stacked Hourglass Network**
 
 ![image-20220707200043958](2D Pose Basic.assets/image-20220707200043958-165719524501210.png)
 
-？？
 
-U-net不也是个这：
 
 ![image-20220707200759627](2D Pose Basic.assets/image-20220707200759627-165719568136311.png)
+
+**Intermediate Supervision（中间监督）**
+
+![preview](2D Pose Basic.assets/v2-40d110117fc385cc7d0c4a964a7580bc_r.jpg)
+
+防止vanishing gradient
 
 
 
